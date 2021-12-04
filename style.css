@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 80vh;
 }
 .wrapper {
   border-radius: 5px;
@@ -96,6 +96,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
+  max-height: 2rem;
 }
 
 footer p {
