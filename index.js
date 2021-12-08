@@ -1,7 +1,7 @@
-const dateOfBirth = document.querySelector("#date-of-birth");
-const luckyNumber = document.querySelector("#lucky-number");
-const checkButton = document.querySelector("#calculate-number");
-const displayMessage = document.querySelector("#output-container");
+const dateOfBirth = document.querySelector(".date-of-birth");
+const luckyNumber = document.querySelector(".lucky-number");
+const checkButton = document.querySelector(".btn");
+const displayMessage = document.querySelector(".output");
 
 const calculateSum = (date) => {
   let sum = 0;
@@ -15,7 +15,7 @@ const calculateSum = (date) => {
 const checkIsNumberLucky = (sumOfDate, numberToCheck) => {
   console.log(sumOfDate, numberToCheck);
   if (sumOfDate % numberToCheck === 0) {
-    return showMessage(` Yayy  ${numberToCheck} is a lucky number!! `);
+    return showMessage(` Yehhh!  ${numberToCheck} is a lucky number!! `);
   }
   showMessage(`${numberToCheck} is not that lucky 😕`);
 };
