@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: rgb(241, 240, 240);
-  --secondary-color: rgb(204, 41, 136);
+  --secondary-color: #fca5a5;
 }
 * {
   padding: 0;
@@ -11,14 +11,18 @@
 }
 body {
   font-family: sans-serif;
-  color: var(--primary-color);
-}
-nav{
-  height: 5rem;
+  font-family: "Work Sans", sans-serif;
   background-color: var(--primary-color);
 }
+nav {
+  height: 5rem;
+  background-color: var(--secondary-color);
+  max-width:70rem;
+  width: 100%;
+  margin: auto;
+}
 .nav-heading {
-  color: black;
+  color: #fff;
   text-align: center;
   padding-top: 1.6rem;
   font-size: 2rem;
@@ -26,10 +30,11 @@ nav{
 main {
   height: 480px;
   max-width: 450px;
-  background-color: var(--secondary-color);
+  background-color: #fff;
   border-radius: 5px;
   width: 100%;
   margin: auto;
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
 }
 .main-heading {
   text-align: center;
@@ -37,13 +42,12 @@ main {
   margin-top: 3rem;
 }
 
-.input-label{
-  display: block;
+.input-label {
+  display: inline-block;
   font-weight: 500;
   font-size: 1.3rem;
-  margin-left: 5rem ;
+  margin-left: 5rem;
   margin-top: 2rem;
-
 }
 input {
   display: block;
@@ -52,14 +56,17 @@ input {
   padding: 0.7rem 1rem;
   border-radius: 0.4rem;
   font-size: 1.2rem;
-  border: 1px solid rgb(204, 41, 136);
-  border: 1px solid rgb(0, 0, 0);
+  border: 2px solid var(--secondary-color);
   outline: none;
   margin: 1rem auto;
 }
+input:focus{
+  border: 2px solid black;
+}
 .btn {
-  background-color: rgb(182, 24, 108);
-  padding: 0.7rem 1rem;
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 1rem;
   border-radius: 0.3rem;
   font-size: 1.2rem;
   font-weight: 600;
@@ -68,12 +75,10 @@ input {
   display: block;
   max-width: 300px;
   width: 100%;
-  border: 1px solid rgb(0, 0, 0);
+  border: none;
   letter-spacing: 2.5px;
 }
-.btn:hover {
-  background-color: rgb(182, 0, 97);
-}
+
 
 .output {
   display: block;
@@ -88,34 +93,41 @@ input {
 
 /* --------------------FOOTER  --------------------*/
 
-footer {margin-top: 2rem;
+footer {
+  margin-top: 2rem;
   height: 8rem;
-  background-color: var(--primary-color);
+  background-color: #fff;
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
 footer p {
   margin-top: 2.5rem;
   padding-top: 1.5rem;
   font-size: 1.2rem;
-  text-align: center;
-  color: #fff;
+  color: var(--secondary-color);
 }
 li {
   display: inline;
+
+}
+a{
+  text-decoration: none;
+ 
+ 
 }
 
 img {
-  width: 3.7rem;
+  width: 3.5rem;
   margin-top: 1rem;
   margin-right: 1rem;
 }
 
 @media (max-width: 425px) {
-  nav{
-    height:5.5rem ;
+  nav {
+    height: 5.5rem;
   }
   .nav-heading {
-    
     padding-top: 1.38rem;
     font-size: 1.5rem;
   }
@@ -132,5 +144,10 @@ img {
     font-size: 1.3rem;
     margin: 2.3rem;
     padding-top: 1.4rem;
+  }
+  .input-label {
+
+    margin-left: 3rem;
+   
   }
 }
