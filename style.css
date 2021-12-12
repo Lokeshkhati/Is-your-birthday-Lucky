@@ -95,7 +95,6 @@ input:focus{
 
 footer {
   margin-top: 2rem;
-  height: 8rem;
   background-color: #fff;
   box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -146,7 +145,6 @@ img {
     padding-top: 1.4rem;
   }
   .input-label {
-
     margin-left: 3rem;
    
   }
